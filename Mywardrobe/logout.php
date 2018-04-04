@@ -1,0 +1,11 @@
+<?php
+	session_start();
+	error_reporting(0);
+	$_SESSION["uid"]="";
+	$_SESSION["role"]="";
+	$_SESSION["name"]="";
+	session_unset();
+	session_destroy();
+	header('Location:index.php');
+	exit;
+?>
